@@ -1,0 +1,8 @@
+<h1>This is /products/<%= @id %></h1>
+
+<div id="product">
+    <%= @product.name %>
+    <%= @product.created_at %>
+</div>
+
+<%= link_to "Go Back", products_path %>
