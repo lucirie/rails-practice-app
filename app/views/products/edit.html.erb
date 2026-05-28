@@ -1,8 +1,2 @@
 <h1>Update Product</h1>
-<%= form_with model: @product do |form| %>
-    <div>
-        <%= form.label :name %>
-        <%= form.text_field :name %>
-    </div>
-    <%= form.submit %>
-<% end %>
+<%= render "form", product: @product %>
