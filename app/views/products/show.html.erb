@@ -2,6 +2,7 @@
 
 <% cache @product do %>
 <div id="product">
+    <%= image_tag @product.featured_image if @product.featured_image.attached? %>
     <%= @product.name %>
     <%= @product.description %>
     <%= @product.created_at %>
