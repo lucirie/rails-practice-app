@@ -24,6 +24,9 @@
   </head>
 
   <body>
+    <div class="notice">
+      <%= notice %>
+    </div>
     <nav>
       <%= link_to "Home", root_path %>
       <%= link_to "Log In", new_session_path unless authenticated? %>
